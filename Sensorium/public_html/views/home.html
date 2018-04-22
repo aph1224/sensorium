@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sensorium</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../resources/css/general.css" />
+        <link type="text/css" rel="stylesheet" href="../resources/css/mediaQuery/generalMQ.css" />
+        <link type="text/css" rel="stylesheet" href="../resources/css/home.css" />
+        <link type="text/css" rel="stylesheet" href="../resources/css/mediaQuery/homeMQ.css" />
+
+        <link rel="shortcut icon" type="image/png" href="../resources/img/ico/icoHeader.png" />
+
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+        <script src="../controller/general.js"></script>
+        <script src="../controller/home.js"></script>
+    </head>
+    <body>
+
+
+
+        <!-- :::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::: -->
+        <div class="header">
+
+            <!--LogOut button-->
+            <button class="headerExit" onclick="logOut();">LogOut</button>
+
+            <!-- Responsive sidebar button -->
+            <div class="sidebarButton" onclick="openNav()">
+                <div class="linesFromSidebar"></div>
+                <div class="linesFromSidebar" style="top: 12px;"></div>
+                <div class="linesFromSidebar" style="top: 25px;"></div>
+            </div>
+        </div>
+
+
+
+        <!-- SIDEBAR CONTAINER -->
+        <div class="navigatorMenu">
+            <div class="navigatorTitle">
+                Sensorium
+            </div>
+            <div class="navigatorOptionsContainer">
+                <a style="text-decoration: none;" href="#">
+                    <div class="navigatorOption selectedSidebarOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/1.png" alt="Home" />
+                        Home
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="#">
+                    <div class="navigatorOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/2.png" alt="Option2" />
+                        Option 2
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="#">
+                    <div class="navigatorOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/3.png" alt="Option3" />
+                        Option 3
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="#">
+                    <div class="navigatorOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/4.png" alt="Option4" />
+                        Option 4
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="#">
+                    <div class="navigatorOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/5.png" alt="Option5" />
+                        Option 5
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- MAIN CONTAINER OF HOME PAGE -->
+        <div class="mainContainer">
+            <label class="mainWelcomeHeader">Welcome</label>
+            <div id="hour"></div>
+            <div id="date"></div>
+        </div>
+
+
+
+        <!-- RESPONSIVE SIDEBAR -->
+        <div id="mySidenav" class="sidebarnav">
+            <div id="sidebarMenu" class="sidebarMenu">
+                <div class="closeSidebar" onclick="closeNav()">
+                    <div class="componentCloseSidebar1"></div>
+                    <div class="componentCloseSidebar2"></div>
+                </div>
+                <div class="containerSidebarLinks">
+
+                    <button class="sidebarLinks selectedSidebarOption">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/1.png" alt="Home" />
+                        Home
+                    </button>
+
+                    <button class="sidebarLinks" onclick="window.location = 'users.html'">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/2.png" alt="Option2" />
+                        Option 2
+                    </button>
+
+                    <button class="sidebarLinks" onclick="window.location = 'register.html'">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/3.png" alt="Option2" />
+                        Option 3
+                    </button>
+
+                    <button class="sidebarLinks">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/4.png" alt="Option2" />
+                        Option 4
+                    </button>
+
+                    <button class="sidebarLinks" onclick="window.location = 'setup.html'">
+                        <img class="navigatorOptionImg" src="../resources/img/ico/5.png" alt="Option2" />
+                        Option 5
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

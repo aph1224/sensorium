@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sensorium</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../resources/css/general.css" />
+        <link type="text/css" rel="stylesheet" href="../resources/css/mediaQuery/generalMQ.css" />
+        <link type="text/css" rel="stylesheet" href="../resources/css/login.css" />
+
+
+        <link rel="shortcut icon" type="image/png" href="../resources/img/ico/yin-yang.png" />
+
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+        <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+        <script src="../controller/general.js"></script>
+        <script src="../controller/login.js"></script>
+
+    </head>
+    <body>
+
+
+
+        <!-- :::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::: -->
+        <div class="mainHeaderContainer">
+
+            <!-- Header Ico -->
+            <div class="headerImg"></div>
+
+            <!-- Sidebar button -->
+            <div class="sidebarButton" onclick="openNav();">
+                <div class="linesFromSidebar"></div>
+                <div class="linesFromSidebar" style="top: 12px;"></div>
+                <div class="linesFromSidebar" style="top: 25px;"></div>
+            </div>
+        </div>
+
+
+
+        <!-- ::::::::::::::::::::::: BACKGROUND IMAGE :::::::::::::::::::::: -->
+        <div class="bckgndImg"></div>
+
+
+
+        <!-- ::::::::::::::::::::::::: SIDEBAR MENU :::::::::::::::::::::::: -->
+        <div id="mySidenav" class="sidebarnav">
+            <div id="sidebarMenu" class="sidebarMenu">
+                <div class="closeSidebar" onclick="closeNav();">
+                    <div class="componentCloseSidebar1"></div>
+                    <div class="componentCloseSidebar2"></div>
+                </div>
+                <div class="containerSidebarLinks">
+                    <button class="sidebarLinks" onclick="alert('Comming soon!');">Option 1</button>
+                    <button class="sidebarLinks" onclick="alert('Comming soon!');">Option 2</button>
+                    <button class="sidebarLinks" onclick="alert('Comming soon!');">Option 3</button>
+                    <button class="sidebarLinks" onclick="alert('Comming soon!');">Option 4</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- :::::::::::::::::::::::::: LOGIN FORM ::::::::::::::::::::::::: -->
+        <div class="loginFormContainer">
+            <input class="formInput" type="email" id="username" placeholder="Email"/>
+            <br/>
+            <input class="formInput" type="password" id="password" placeholder="Password"/>
+            <br/>
+            <button class="buttonStyle" onclick="logIn();" >LogIn</button>
+            <br/>
+            <button class="buttonStyle" id="googleButton" onclick="logInGoogle();" >LogIn with Google</button>
+        </div>
+
+
+
+    </body>
+</html>

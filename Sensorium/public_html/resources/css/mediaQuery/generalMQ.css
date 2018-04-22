@@ -1,0 +1,27 @@
+/* 
+    Created on : 31/12/2016, 09:49:26 AM
+    Author     : Aph
+*/
+
+
+@media screen and (max-width: 880px) {
+    .sidebarnav {
+        display: block;
+    }
+
+    /* Header with 100% of width (only responsive) */
+    .header {
+        left: 0%;
+        width: 100%;
+    }
+
+    /* Change the active option color */
+    .selectedSidebarOption {
+        border-left: 15px solid #FFF;
+    }
+
+    /* Hide the sidemenu */
+    .navigatorMenu {
+        display: none;
+    }
+}

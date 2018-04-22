@@ -1,0 +1,48 @@
+/* 
+    Created on : 28/12/2016, 11:04:09 AM
+    Author     : Aph
+*/
+
+
+
+/* ********************************* SIDEBAR ******************************** */
+.sidebarButton {
+    display: none;/**/
+    left: 20px; right: auto;
+}
+.sidebarMenu {
+    left: 0px; right: auto;
+    background-color: rgba(85,85,85,1.0);
+}
+.closeSidebar {
+    left: 20px; right: auto;
+}
+.sidebarLinks:hover {
+    color: rgba(85,85,85,1.0);
+}
+.linesFromSidebar {
+    background-color: #555;
+}
+
+
+
+/* ***************************** MAIN CONTAINER ***************************** */
+.mainContainer {
+    position: absolute;
+    top: 80px; left: 20%;
+    width: 80%; height: auto;
+
+    color: #555;
+    text-align: center;
+}
+.mainWelcomeHeader {
+    font-size: 80px;
+}
+#hour {
+    margin-top: 50px;
+    font-size: 60px;
+}
+#date {
+    margin-top: 80px;
+    font-size: 60px;
+}

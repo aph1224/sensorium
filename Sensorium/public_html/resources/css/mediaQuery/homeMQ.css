@@ -1,0 +1,29 @@
+/* 
+    Created on : 29/12/2016, 01:48:43 PM
+    Author     : Aph
+*/
+
+
+@media screen and (max-width: 880px) {
+    /* Show sidebar button (only responsive) */
+    .sidebarButton {
+        display: block;
+    }
+
+    #hour {
+        font-size: 40px;
+    }
+    #date {
+        font-size: 40px;
+    }
+
+    /* Welcome text */
+    .mainWelcomeHeader {
+        font-size: 40px;
+    }
+    /* Main container */
+    .mainContainer {
+        left: 0%;
+        width: 100%;
+    }
+}

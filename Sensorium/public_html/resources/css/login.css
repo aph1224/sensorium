@@ -1,0 +1,88 @@
+/* 
+    Created on : 24/12/2016, 09:53:44 AM
+    Author     : Aph
+*/
+
+
+
+/* :::::::::::::::::::::::::::: BACKGROUND IMAGE :::::::::::::::::::::::::::: */
+.bckgndImg {
+    background-image: url("../img/bckgnd/cover_2.jpg");
+}
+
+
+
+/* ::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::: */
+.mainHeaderContainer {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 50px;
+    background: transparent;
+
+    z-index: 10;
+}
+
+
+
+/* :::::::::::::::::::::::::::::: HEADER IMAGE :::::::::::::::::::::::::::::: */
+.headerImg {
+    position: absolute;
+    top: 5px; left: 20px;
+    width: 50px; height: 50px;
+    border-radius: 100%;
+
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ico/icoHeader.png");
+}
+
+
+
+/* :::::::::::::::::::::::::::: LOGIN CONTAINER ::::::::::::::::::::::::::::: */
+.loginFormContainer {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 300px; height: 170px;
+    margin-left: -160px; margin-top: -95px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.formInput {
+    position: relative;
+    top: 0px; left: 0px;
+    width: 100%; height: 30px;   
+}
+
+#googleButton {
+    width: 200px;
+    margin-left: -100px;
+}
+
+
+
+/* ::::::::::::::::::::::::: GENERAL BUTTON STYLES :::::::::::::::::::::::::: */
+.buttonStyle {
+    position: relative;
+    left: 50%;
+    width: 120px; height: 30px;
+    margin-top: 20px; margin-left: -60px;
+}
+
+
+
+/* :::::::::::::::::::::::::::::::: SIDEBAR ::::::::::::::::::::::::::::::::: */
+.sidebarnav {
+    display: block;
+}
+
+
+
+/* ::::::::::::::::::::::::::: WHITE PLACEHONDER :::::::::::::::::::::::::::: */
+:-moz-placeholder { color: rgba(255,255,255,0.5); }
+::-moz-placeholder { color: rgba(255,255,255,0.5); }
+:-ms-input-placeholder { color: rgba(255,255,255,0.5); }
+::-webkit-input-placeholder { color: rgba(255,255,255,0.5); }
